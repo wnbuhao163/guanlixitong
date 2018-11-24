@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/common.css">
-  <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
@@ -18,40 +17,66 @@
     <!----header-end---->
     <div class="sj-mian">
       <%- include("./common/nav-left.ejs")%>
-      
+
       <div class="sj-mian-right">
-          <div class="search">
-              <input type="text" class="form-control" placeholder="Text input">
-              <button type="button" class="btn btn-success">搜索</button>
-          </div>
+        <div class="search">
+          <input type="text" class="form-control" placeholder="搜索">
+          <button type="button" class="btn btn-success">搜索</button>
+        </div>
         <div class="bs-example" data-example-id="bordered-table">
-          <table class="table table-bordered table table-hover">
+          <table class="table table-bordered table table-hover .table-bordered">
             <thead>
               <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
+                <th>序号</th>
+                <th>用户名</th>
+                <th>用户名称</th>
+                <th>手机号码</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>管理员</th>
+                <th>操作</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td>a6980118</td>
+                <td>夏目贵志</td>
+                <td>15679989900</td>
+                <td>男</td>
+                <td>24</td>
+                <td>是</td>
+                <td><a href="#">修改</a></td>
               </tr>
               <tr>
                 <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <td>a6980118</td>
+                <td>夏目贵志</td>
+                <td>15679989900</td>
+                <td>男</td>
+                <td>24</td>
+                <td>是</td>
+                <td><a href="#">修改</a><a href="#">删除</a></td>
               </tr>
               <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
+                <th scope="row">2</th>
+                <td>a6980118</td>
+                <td>夏目贵志</td>
+                <td>15679989900</td>
+                <td>男</td>
+                <td>24</td>
+                <td>是</td>
+                <td><a href="#">修改</a><a href="#">删除</a></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>a6980118</td>
+                <td>夏目贵志</td>
+                <td>15679989900</td>
+                <td>男</td>
+                <td>24</td>
+                <td>是</td>
+                <td><a href="#">修改</a><a href="#">删除</a></td>
               </tr>
             </tbody>
           </table>
@@ -64,7 +89,7 @@
                 <span aria-hidden="true">&laquo;</span>
               </a>
             </li>
-            <li  class="active"><a href="#">1</a></li>
+            <li class="active"><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>

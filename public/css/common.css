@@ -4,7 +4,7 @@ html, body {
   height: 100%; }
 
 body {
-  background: #ccc; }
+  background: url("/img/bjt.jpg") no-repeat; }
 
 .container {
   display: flex;
@@ -12,33 +12,50 @@ body {
   height: 100%; }
 
 .sj-header {
-  height: 50px;
-  border-bottom: 1px solid #000 !important;
-  padding: 30px  0; }
+  height: 70px;
+  padding: 30px  10px;
+  background: rgba(63, 62, 62, 0.7);
+  border: 1px solid #000;
+  margin-top: 20px;
+  border-radius: 12px 12px 0 0; }
 
 .sj-footer {
   height: 50px;
-  border-top: 1px solid #000; }
+  border: 1px solid #000;
+  border-radius: 0 0 12px 12px;
+  border-top: none;
+  background: rgba(63, 62, 62, 0.7); }
 
 .sj-mian {
   height: 100%;
   display: flex; }
+  .sj-mian h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 100px; }
   .sj-mian .sj-mian-right {
     flex: 1;
-    padding: 10px; }
+    padding: 10px;
+    background: rgba(63, 62, 62, 0.7);
+    border: 1px solid #000;
+    border-top: none; }
   .sj-mian .sj-nav {
     width: 280px;
-    border-right: 1px solid #000;
+    background: rgba(63, 62, 62, 0.7);
     height: 100%;
     overflow-y: auto;
-    border-left: 1px solid #000; }
+    border: 1px solid #000;
+    border-right: none;
+    border-top: none; }
     .sj-mian .sj-nav li {
       height: 45px;
       line-height: 45px;
       text-align: center;
       border-bottom: 1px solid #000; }
       .sj-mian .sj-nav li a {
-        font-size: 16px; }
+        font-size: 16px;
+        color: #1898ee; }
 
 .sj-header {
   display: flex;
@@ -54,18 +71,30 @@ body {
     color: #52abe7; }
 
 .table-hover > tbody > tr:hover {
-  background: red; }
+  background: rgba(247, 244, 244, 0.7); }
 
 .pagination {
   float: right; }
+  .pagination li {
+    background: rgba(247, 244, 244, 0.7); }
 
 .form-control {
   width: 400px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  background: rgba(63, 62, 62, 0.7); }
 
 .search {
   display: flex; }
   .search .btn {
     height: 34px; }
+
+.btn-primary {
+  margin-left: 20px; }
+
+.btn-success {
+  margin-left: 20px; }
+
+.table {
+  color: #000; }
 
 /*# sourceMappingURL=common.css.map */

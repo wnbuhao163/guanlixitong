@@ -16,7 +16,34 @@
       <!----header-end---->
       <div class="sj-mian">
         <%- include("./common/nav-left.ejs")%>
-        <div class="sj-mian-right">电话管理</div>
+        <div class="sj-mian-right">
+            <button>新增手机</button>
+            <table class="table table-bordered table table-hover .table-bordered">
+                <thead>
+                  <tr>
+                    <th>序号</th>
+                    <th>图片</th>
+                    <th>手机名称</th>
+                    <th>所属品牌</th>
+                    <th>官方指导价</th>
+                    <th>二手回收价</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>图片</td>
+                    <td>苹果iphone XS Max</td>
+                    <td>苹果</td>
+                    <td>￥18000</td>
+                    <td>￥12000</td>
+                    <td><a href="#">修改</a><a href="#">删除</a></td>
+                  </tr>
+            
+                </tbody>
+              </table>
+        </div>
       </div>
       <!-------foot------->
       <%- include("./common/footer.ejs")%>

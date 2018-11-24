@@ -1,0 +1,43 @@
+body{
+    background:url("/img/bjt.jpg") no-repeat;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    .sj-form{
+        height:100%;
+        width:100%;
+        .box{
+            width:400px;
+            height:450px;
+            background:#fff;
+            position: fixed;
+            margin: auto;
+            top:0;
+            left: 0;
+            right: 1000px;
+            bottom: 0;
+            border-radius: 13px;
+            padding: 20px;
+            background-color:rgba(255, 255, 255, 0.4);
+            border:2px solid yellow;
+            text-align: center;
+            .head{
+                margin:20px;
+            }
+            .btn{
+                width:320px;
+                background:rgb(190, 235, 107);
+                margin-top:20px;
+            }
+            .uname{
+                margin-top:40px;
+                display: inline-block;
+            }
+        }
+    }
+}
+.form-control{
+    width:320px;
+    text-align: center;
+    margin-top:15px;
+}
