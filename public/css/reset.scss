@@ -1,0 +1,28 @@
+html, body, ul, li, ol, dl, dd, dt, p, span,h1, h2, h3,h4,h5,h6,form,input,img,textarea,b,i,strong,em,section{
+	margin:0;
+	padding:0;
+	}
+a{
+	text-decoration:none;
+	color:#000;
+	}
+img{
+	border:0;
+	 } 
+body{
+	font:12px/20px "微软雅黑";
+	}
+input{
+	cursor:pointer; 
+	outline:none;
+	border:0;
+	}
+i,em{
+	font-style:normal;
+	}
+ul li,ol li{
+	list-style:none;
+	}
+b,strong{
+	font-weight:normal;
+	}
