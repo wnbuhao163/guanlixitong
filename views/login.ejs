@@ -13,14 +13,17 @@
 
 <body>
     <div class="sj-form">
-        <form class="box" >
+        <form class="box" action="/users/login" method="POST">
             <h1 class="head">XXXX后台管理系统</h1>
             <label>
-                <input type="text" class="form-control" placeholder="账号">
+                <input type="text" name="uname" class="form-control" placeholder="请输入用户名" id="tex">
+                <span id="info" style="display:none;">请输入用户名</span>
+                <span id="show" style="display:none;">输入的不合格</span>
             </label>
             <br />
             <label>
-                <input type="password" class="form-control" placeholder="密码">
+                <input type="password" name="pwd" class="form-control" placeholder="请输入密码" id="pwd">
+                <span style="display:none;">6-20个字符的密码</span>
             </label>
             <br />
             <button class="btn">登录</button>
@@ -31,3 +34,31 @@
 </body>
 
 </html>
+<script src="/js/jquery.min.js"></script>
+<!-- <script>
+    var mongodb=require("mongodb").MongoClient;
+    var url= "mongodb://localhost:27017/";
+    var unamReg = /^\w{6,20}$/;//用户名监测
+    var pwdReg = /^\S{6,20}$/;//密码监测
+    var sormSub = false;
+    $("#tex").focus(function(){
+        $("#info").show("1000")
+    });
+    $("#tex").blur(function(){
+       
+        $("#info").hide("1000");
+    })
+    $(".btn").click(function(){
+        
+
+        if(sormSub ==  $("#tex").val()){
+            alert("用户名不能为空");
+        }else if(sormSub == $("#pwd").val()){
+            alert("密码不能为空");
+        }else{
+            sormSub = true;
+            alertr("成功")
+        }
+    });
+
+</script> -->

@@ -1,8 +1,10 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
-var cookieParser = require('cookie-parser');
+var cookieParser = require('cookie-parser');//提供了一个req.cookies请求头里面的
 var logger = require('morgan');
+
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -18,6 +20,24 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+var arr=["/login.html","/ages.html","/users/login","/users/ages"];
+//自己写的中间件用来判断用户是否登录
+app.use(function(req,res,next){
+  
+  if(arr.indexOf(req.url) > -1){//排除重镜像
+    next()
+    return;
+  }
+
+  var nikename= req.cookies.nickname;//得到Cookie里面的内容
+  if(nikename){
+    next();
+  }else{
+    res.redirect("/login.html");
+  }
+})
+
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

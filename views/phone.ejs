@@ -17,7 +17,18 @@
       <div class="sj-mian">
         <%- include("./common/nav-left.ejs")%>
         <div class="sj-mian-right">
-            <button>新增手机</button>
+            <button id="barnd" class="btn">新增手机</button>
+            <div class="append-brand" style="display:none">
+                <h3>新增手机</h3>
+                <ul>
+                  <li>名&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;称:<input type="text"></li>
+                  <li>品&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;牌:<input type="text"></li>
+                  <li>官方指导价:<input type="text"></li>
+                  <li>二手回收价:<input type="text"></li>
+                  <li>图&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;片:<input type="text"></li>
+                  <li><button class="btn">确认</button><button  class="btn" id="cancel">取消</button></li>
+                </ul>
+              </div>
             <table class="table table-bordered table table-hover .table-bordered">
                 <thead>
                   <tr>
@@ -50,3 +61,12 @@
     </div>
 </body>
 </html>
+<script src="/js/jquery.min.js"></script>
+<script>
+    $("#barnd").click(function(){
+      $(".append-brand").show();
+    });
+    $("#cancel").click(function(){
+      $(".append-brand").hide();
+    });
+</script>

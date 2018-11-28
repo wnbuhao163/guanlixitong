@@ -13,26 +13,35 @@
 
 <body>
     <div class="sj-form">
-        <form class="box" >
+        <form class="box" action="/users/ages" method="POST">
             <h1 class="head">注册后台管理系统</h1>
             <label>
-                <input type="text" class="form-control" placeholder="账号">
+                <input type="text" name="uname" class="form-control" placeholder="账号">
             </label>
             <br />
             <label>
-                <input type="password" class="form-control" placeholder="密码">
+                <input type="password" name="pwd" class="form-control" placeholder="密码">
             </label>
             <label>
-                <input type="password" class="form-control" placeholder="确认密码">
+                <input type="password" naem="spwd" class="form-control" placeholder="确认密码">
             </label>
             <label>
-                <input type="email" class="form-control" placeholder="电子邮箱">
+                <input type="text" name="username" class="form-control" placeholder="名称"> 
             </label>
             <label>
-                <input type="text" class="form-control" placeholder="姓名">
+                <input type="radio" name="sex" value="男" checked>男
+                <input type="radio" name="sex" value="女">女
+            </label>
+            <br/>
+            <label>
+                <p style="display: inline-block">管理员:</p>
+                <input type="radio" name="isadmin" value="是">是    
+                <input type="radio" name="isadmin" value="否"checked>否
             </label>
             <br />
             <button class="btn">注册</button>
+            <br/>
+            <a href="/login.html">已有账号，立即登录</a>
             <br />
         </form>
     </div>

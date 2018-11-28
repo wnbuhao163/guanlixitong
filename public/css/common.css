@@ -40,6 +40,39 @@ body {
     background: rgba(63, 62, 62, 0.7);
     border: 1px solid #000;
     border-top: none; }
+    .sj-mian .sj-mian-right #barnd {
+      margin-bottom: 10px;
+      background: #7272e4;
+      color: #fff; }
+    .sj-mian .sj-mian-right .append-brand {
+      width: 400px;
+      height: 500px;
+      background: #fff;
+      position: fixed;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center; }
+      .sj-mian .sj-mian-right .append-brand h3 {
+        text-align: center;
+        margin-top: 20px; }
+      .sj-mian .sj-mian-right .append-brand li {
+        font-size: 20px;
+        margin-top: 20px; }
+        .sj-mian .sj-mian-right .append-brand li input {
+          border: 1px solid #ccc;
+          float: rigth;
+          margin-left: 10px; }
+      .sj-mian .sj-mian-right .append-brand li:last-child {
+        margin-top: 30px; }
+        .sj-mian .sj-mian-right .append-brand li:last-child button {
+          margin-right: 10px;
+          background: #7272e4;
+          color: #fff; }
   .sj-mian .sj-nav {
     width: 280px;
     background: rgba(63, 62, 62, 0.7);
@@ -95,6 +128,6 @@ body {
   margin-left: 20px; }
 
 .table {
-  color: #000; }
+  color: #fff; }
 
 /*# sourceMappingURL=common.css.map */

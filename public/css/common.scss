@@ -40,6 +40,46 @@ body{
         background:rgba(63, 62, 62, 0.7);
         border:1px solid #000;
         border-top:none;
+        #barnd{
+            margin-bottom:10px;
+            background: rgb(114, 114, 228);
+            color: #fff;
+        }
+        .append-brand{
+            width:400px;
+            height:500px;
+            background:#fff;
+            position: fixed;
+            margin:auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            h3{
+                text-align: center;
+                margin-top:20px;
+            }
+            li{
+                font-size: 20px;
+                margin-top:20px; 
+                input{
+                    border: 1px solid #ccc;
+                    float: rigth;
+                    margin-left:10px;
+                }
+            }
+            li:last-child{
+                margin-top:30px;
+                button{
+                    margin-right: 10px;
+                    background: rgb(114, 114, 228);
+                    color: #fff;
+                }
+            }
+        }
      }
     .sj-nav{
         width:280px;
@@ -106,5 +146,5 @@ body{
     margin-left:20px;
 }
 .table{
-    color:#000;
+    color:#fff;
 }

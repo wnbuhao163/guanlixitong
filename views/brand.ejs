@@ -19,8 +19,16 @@
     <div class="sj-mian">
       <%- include("./common/nav-left.ejs")%>
       <div class="sj-mian-right">
+          <button id="barnd" class="btn">新增品牌</button>
+          <div class="append-brand" style="display:none">
+              <h3>新增品牌</h3>
+              <ul>
+                <li>品牌LOGO:<input type="text"></li>
+                <li>品牌名称:<input type="text"></li>
+                <li><button class="btn">确认</button><button  class="btn" id="cancel">取消</button></li>
+              </ul>
+            </div>
         <table class="table table-bordered table table-hover .table-bordered">
-          <div>新增品牌</div>
           <thead>
             <tr>
               <th>序号</th>
@@ -34,7 +42,7 @@
               <th scope="row">1</th>
               <td>苹果LOGO</td>
               <td>苹果</td>
-              <td><a href="#">修改</a><a href="#">删除</a></td>
+              <td><a href="#">修改</a>|<a href="#">删除</a></td>
             </tr>
           </tbody>
         </table>
@@ -46,3 +54,12 @@
 </body>
 
 </html>
+<script src="/js/jquery.min.js"></script>
+<script>
+    $("#barnd").click(function(){
+      $(".append-brand").show();
+    });
+    $("#cancel").click(function(){
+      $(".append-brand").hide();
+    });
+</script>
